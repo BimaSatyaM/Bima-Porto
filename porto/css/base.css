@@ -1,0 +1,85 @@
+/* ===== RESET ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Poppins ke body saja */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+html { scroll-behavior: smooth; }
+html, body { height: 100%; overflow: hidden; }
+
+:root {
+    --primary: #1DB954;
+    --primary-hover: #1ed760;
+    --bg-main: #121212;
+    --bg-card: #181818;
+    --bg-card-hover: #282828;
+    --text-secondary: #b3b3b3;
+    --border: #282828;
+    --glow: 0 0 20px rgba(29, 185, 84, 0.5);
+    --radius: 8px;
+    --ease: all 0.2s ease;
+    --player-h: 90px;
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
+::-webkit-scrollbar-thumb { background: #535353; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+/* ===== FONT AWESOME PROTECTION ===== */
+/* Pastikan Font Awesome tidak di-override */
+.fa, .fas, .far, .fab,
+.fa-solid, .fa-regular, .fa-brands {
+    font-family: "Font Awesome 6 Free" !important;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fab, .fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400;
+}
+
+.far, .fa-regular {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 400;
+}
+
+.fas, .fa-solid {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+}
+
+/* ===== FONT AWESOME - FORCE OVERRIDE POPPINS ===== */
+.fa, .fas, .far, .fab,
+.fa-solid, .fa-regular, .fa-brands,
+[class^="fa-"], [class*=" fa-"] {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fab,
+.fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400;
+}
+
+.far,
+.fa-regular {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 400;
+}
